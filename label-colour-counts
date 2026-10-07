@@ -1,0 +1,68 @@
+/* --- UNREAD COUNT BADGES --- */
+
+/* Label with RED count badge (pager-duty) */
+[data-tooltip*="pager-duty"] .bsU,
+[aria-label*="pager-duty"] .bsU,
+a[title*="pager-duty"] .bsU {
+  color: #b71c1c !important;
+  font-weight: 900 !important;
+  text-shadow: 0.3px 0 0 #a50e0e !important;
+  background-color: #fce8e6 !important;
+  padding: 2px 6px !important;
+  border-radius: 10px !important;
+}
+
+/* Label with DARK BLUE count badge (provision) */
+[data-tooltip*="provision"] .bsU,
+[aria-label*="provision"] .bsU,
+a[title*="provision"] .bsU {
+  color: #0d47a1 !important;
+  font-weight: 900 !important;
+  text-shadow: 0.3px 0 0 #0d47a1 !important;
+  background-color: #d0e1fd !important;
+  padding: 2px 6px !important;
+  border-radius: 10px !important;
+}
+
+/* Explicit Alerts Sub-labels: RED count badge */
+[data-tooltip*="splunk"] .bsU,
+[aria-label*="splunk"] .bsU,
+a[title*="splunk"] .bsU,
+[data-tooltip*="fiber-incident"] .bsU,
+[aria-label*="fiber-incident"] .bsU,
+a[title*="fiber-incident"] .bsU {
+  color: #b71c1c !important;
+  font-weight: 900 !important;
+  text-shadow: 0.3px 0 0 #a50e0e !important;
+  background-color: #fce8e6 !important;
+  padding: 2px 6px !important;
+  border-radius: 10px !important;
+}
+
+
+/* --- SIDEBAR ROW HIGHLIGHTS (ONLY WHEN UNREAD MESSAGES EXIST) --- */
+
+/* Light red background for pager-duty ONLY when unread count exists */
+[data-tooltip*="pager-duty"]:has(.bsU),
+[aria-label*="pager-duty"]:has(.bsU),
+a[title*="pager-duty"]:has(.bsU) {
+  background-color: #f8d7da !important;
+}
+
+/* Light blue background for provision ONLY when unread count exists */
+[data-tooltip*="provision"]:has(.bsU),
+[aria-label*="provision"]:has(.bsU),
+a[title*="provision"]:has(.bsU) {
+  background-color: #e3f2fd !important;
+}
+
+/* Light red background for explicit alert sub-labels ONLY when unread count exists */
+[data-tooltip*="splunk"]:has(.bsU),
+[aria-label*="splunk"]:has(.bsU),
+a[title*="splunk"]:has(.bsU),
+
+[data-tooltip*="fiber-incident"]:has(.bsU),
+[aria-label*="fiber-incident"]:has(.bsU),
+a[title*="fiber-incident"]:has(.bsU) {
+  background-color: #f8d7da !important;
+}
