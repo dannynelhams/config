@@ -25,9 +25,9 @@ a[title*="provision"] .bsU {
 }
 
 /* Explicit Alerts Sub-labels: RED count badge */
-[data-tooltip*="splunk"] .bsU,
-[aria-label*="splunk"] .bsU,
-a[title*="splunk"] .bsU,
+[data-tooltip*="shinken"] .bsU,
+[aria-label*="shinken"] .bsU,
+a[title*="shinken"] .bsU,
 [data-tooltip*="fiber-incident"] .bsU,
 [aria-label*="fiber-incident"] .bsU,
 a[title*="fiber-incident"] .bsU {
@@ -57,9 +57,9 @@ a[title*="provision"]:has(.bsU) {
 }
 
 /* Light red background for explicit alert sub-labels ONLY when unread count exists */
-[data-tooltip*="splunk"]:has(.bsU),
-[aria-label*="splunk"]:has(.bsU),
-a[title*="splunk"]:has(.bsU),
+[data-tooltip*="shinken"]:has(.bsU),
+[aria-label*="shinken"]:has(.bsU),
+a[title*="shinken"]:has(.bsU),
 
 [data-tooltip*="fiber-incident"]:has(.bsU),
 [aria-label*="fiber-incident"]:has(.bsU),
